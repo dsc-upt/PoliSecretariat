@@ -15,6 +15,10 @@ import {StudentCardComponent} from "./pages/all/components/student-card/student-
 import {MatCardModule} from "@angular/material/card";
 import { StudentTableComponent } from './pages/all/components/student-table/student-table.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { HeaderNavComponent } from './navigation/header-nav/header-nav.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from "@angular/material/icon";
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,7 @@ import {MatTabsModule} from "@angular/material/tabs";
     AllComponent,
     StudentCardComponent,
     StudentTableComponent,
+    HeaderNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +39,10 @@ import {MatTabsModule} from "@angular/material/tabs";
     MatButtonModule,
     MatTableModule,
     MatCardModule,
-    MatTabsModule
+    MatTabsModule,
+    MatToolbarModule,
+    MatIconModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
