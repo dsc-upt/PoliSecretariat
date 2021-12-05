@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { RouterModule } from '@angular/router';
+
 @Component({
   selector: 'app-header-nav',
   templateUrl: './header-nav.component.html',

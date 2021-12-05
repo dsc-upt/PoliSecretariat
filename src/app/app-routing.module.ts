@@ -5,7 +5,8 @@ import {AllComponent} from "./pages/all/all.component";
 
 const routes: Routes = [
   { path: 'add', component: AddComponent },
-  { path: 'all', component: AllComponent }
+  { path: 'all', component: AllComponent },
+  { path: '', redirectTo: '/all', pathMatch: 'full'}
 ];
 
 @NgModule({
