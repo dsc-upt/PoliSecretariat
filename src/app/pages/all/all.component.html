@@ -1,0 +1,10 @@
+<mat-tab-group>
+  <mat-tab label="Cards">
+    <div class="cards">
+      <app-student-card *ngFor="let student of students" [student]="student"></app-student-card>
+    </div>
+  </mat-tab>
+  <mat-tab label="Table">
+    <app-student-table [students]="students"></app-student-table>
+  </mat-tab>
+</mat-tab-group>

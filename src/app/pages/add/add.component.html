@@ -1,0 +1,36 @@
+<form (ngSubmit)="add()" [formGroup]="studentsForm">
+  <mat-form-field appearance="outline">
+    <mat-label>ID</mat-label>
+    <input formControlName="id" matInput type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>First Name</mat-label>
+    <input formControlName="firstName" matInput type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Last Name</mat-label>
+    <input formControlName="lastName" matInput type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Date of Birth</mat-label>
+    <input formControlName="dob" matInput type="date">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Faculty</mat-label>
+    <input formControlName="faculty" matInput type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Specialization</mat-label>
+    <input formControlName="specialization" matInput type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Email</mat-label>
+    <input formControlName="email" matInput type="text">
+  </mat-form-field>
+  <mat-form-field appearance="outline">
+    <mat-label>Phone Number</mat-label>
+    <input formControlName="phoneNumber" matInput type="number">
+    <span *ngIf="studentsForm.controls['phoneNumber'].value" matPrefix> + </span>
+  </mat-form-field>
+  <button [disabled]="!studentsForm.valid" mat-raised-button type="submit">Add</button>
+</form>

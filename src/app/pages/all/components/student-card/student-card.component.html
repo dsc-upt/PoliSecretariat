@@ -1,0 +1,36 @@
+<mat-card *ngIf="student">
+  <div class="row-alignment">
+    <div class="detail">
+      <p class="label">First Name</p>
+      <h3>{{student.firstName | titlecase}}</h3>
+    </div>
+    <div class="detail">
+      <p class="label">Last Name</p>
+      <h3>{{student.lastName | titlecase}}</h3>
+    </div>
+  </div>
+  <div class="detail">
+    <p class="label">Date of Birth</p>
+    <p>{{student.dob | date: 'mediumDate'}}</p>
+  </div>
+  <div class="row-alignment">
+    <div class="detail">
+      <p class="label">Faculty</p>
+      <p>{{student.faculty}}</p>
+    </div>
+    <div class="detail">
+      <p class="label">Specialization</p>
+      <p>{{student.specialization}}</p>
+    </div>
+  </div>
+  <div class="row-alignment">
+    <div class="detail">
+      <p class="label">Email</p>
+      <p>{{student.email}}</p>
+    </div>
+    <div class="detail">
+      <p class="label">Phone Number</p>
+      <p>{{student.phoneNumber}}</p>
+    </div>
+  </div>
+</mat-card>
