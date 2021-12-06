@@ -15,6 +15,10 @@ import {StudentCardComponent} from "./pages/all/components/student-card/student-
 import {MatCardModule} from "@angular/material/card";
 import { StudentTableComponent } from './pages/all/components/student-table/student-table.component';
 import {MatTabsModule} from "@angular/material/tabs";
+import { ToolbarComponent } from './shared/toolbar/toolbar.component';
+import {MatToolbarModule} from "@angular/material/toolbar";
+import { HomeComponent } from './pages/home/home.component';
+import { routingComponents } from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -23,19 +27,23 @@ import {MatTabsModule} from "@angular/material/tabs";
     AllComponent,
     StudentCardComponent,
     StudentTableComponent,
+    ToolbarComponent,
+    HomeComponent,
+    routingComponents
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NoopAnimationsModule,
-    ReactiveFormsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatTableModule,
-    MatCardModule,
-    MatTabsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NoopAnimationsModule,
+        ReactiveFormsModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatTableModule,
+        MatCardModule,
+        MatTabsModule,
+        MatToolbarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
