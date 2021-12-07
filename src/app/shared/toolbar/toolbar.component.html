@@ -1,9 +1,9 @@
 <mat-toolbar color="primary">
   <span>
-    <a mat-button routerLink="/home">PoliSecretariat</a>
+    <a mat-button [routerLink]="['home']">PoliSecretariat</a>
   </span>
-  <a mat-button routerLink="/add">Add</a>
-  <a mat-button routerLink="/all">All</a>
+  <a mat-button [routerLink]="['add']">Add</a>
+  <a mat-button [routerLink]="['all']">All</a>
 </mat-toolbar>
 
 <router-outlet></router-outlet>
